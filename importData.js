@@ -2,14 +2,13 @@
 
 import fs from 'fs';
 import path from 'path';
-import csv from 'csv-parser';
 import connectDatabase from './db.js';
 import csvtojson from 'csvtojson';
 
 async function importData() {
     try {
       const db = await connectDatabase();
-      const dataFolder = path.join('C:/Users/MSI/Desktop/r/back', 'data');
+      const dataFolder = path.join('C:/Users/MSI/Desktop/r/Zywa Assignment', 'data');
   
       fs.readdirSync(dataFolder).forEach(async (file) => {
         const collectionName = path.parse(file).name;

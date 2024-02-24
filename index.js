@@ -28,15 +28,13 @@ async function getCardStatus(identifier) {
             "Sample_Card_Status_Info_-_Delivery_exceptions"
         );
         const deliveryData = await getDataFromDatabase(
-            "Sample Card Status_Info_-_Delivered"
+            "Sample_Card_Status_Info_-_Delivered"
         );
         const returnedData = await getDataFromDatabase(
-            "Sample_Card_Status_Info_-_Returnedl"
+            "Sample_Card_Status_Info_-_Returned"
 
         );
-
-
-            console.log(cardData);
+        
         let status = "";
         let card=returnedData.find((data) => {
             const userContactLastNineDigits = data["User contact"].slice(-9);

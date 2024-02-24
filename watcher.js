@@ -8,7 +8,7 @@ import connectDatabase from './db.js';
 async function watchDataFolder() {
   try {
     const db = await connectDatabase();
-    const dataFolder = path.join('C:/Users/MSI/Desktop/r/back', 'data');
+    const dataFolder = path.join('C:/Users/MSI/Desktop/r/Zywa Assignment', 'data');
 
     fs.watch(dataFolder, async (eventType, filename) => {
       console.log(`File ${filename} has been ${eventType}`);
