@@ -53,11 +53,8 @@ The technology stack used in the project includes the following components:
     - **MongoDB Node.js Driver**: Official MongoDB driver for Node.js that enables interaction with MongoDB databases from Node.js applications.
 
 ## Usage
-
-1. Ensure MongoDB is running.
-2. Import data from CSV files to MongoDB: `npm run import-data`.
-3. Start the server: `npm start`.
-4. Access the API endpoint to retrieve card status.
+1. Start the server: `npm start`.
+2. Access the API endpoint to retrieve card status.
 
 ## Future Improvements
 
