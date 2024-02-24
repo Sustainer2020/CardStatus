@@ -17,15 +17,16 @@ The data from partner companies is stored in CSV files located in the `data` fol
 
 ## API Endpoint
 
-- **GET /get_card_status**: Retrieves the status of a card based on the user's phone number or card ID. Example usage: `/get_card_status?phoneNumber=1234567890`
+-   **GET /get_card_status**: Retrieves the status of a card based on the user's phone number or card ID. Example usage: `/get_card_status?phoneNumber=1234567890&cardId=ZYW8890`
 
 ## File Structure
 
-- `server.js`: Express.js server setup and endpoint implementation.
-- `db.js`: MongoDB connection setup.
-- `importData.js`: Script to import data from CSV files to MongoDB.
-- `data/`: Folder containing CSV files with card status information from partner companies.
-- `README.md`: Project documentation.
+-   `server.js`: Express.js server setup and endpoint implementation.
+-   `db.js`: MongoDB connection setup.
+-   `importData.js`: Script to import data from CSV files to MongoDB.
+-   `data/`: Folder containing CSV files with card status information from partner companies.
+-   `watcher.js` : Script to watch and update if any changes made to csv files
+-   `README.md`: Project documentation.
 
 ## Software Architecture
 
@@ -42,13 +43,14 @@ The software architecture of the project follows a simple client-server architec
 The technology stack used in the project includes the following components:
 
 1. **Backend**:
-   - **Node.js**: A JavaScript runtime environment that executes JavaScript code outside of a web browser.
-   - **Express.js**: A minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications.
-   - **MongoDB**: A NoSQL document database that stores data in flexible, JSON-like documents.
+
+    - **Node.js**: A JavaScript runtime environment that executes JavaScript code outside of a web browser.
+    - **Express.js**: A minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications.
+    - **MongoDB**: A NoSQL document database that stores data in flexible, JSON-like documents.
 
 2. **Data Management**:
-   - **CSVtoJSON**: A Node.js module to convert CSV data to JSON format, used for parsing data from CSV files.
-   - **MongoDB Node.js Driver**: Official MongoDB driver for Node.js that enables interaction with MongoDB databases from Node.js applications.
+    - **CSVtoJSON**: A Node.js module to convert CSV data to JSON format, used for parsing data from CSV files.
+    - **MongoDB Node.js Driver**: Official MongoDB driver for Node.js that enables interaction with MongoDB databases from Node.js applications.
 
 ## Usage
 
@@ -59,8 +61,7 @@ The technology stack used in the project includes the following components:
 
 ## Future Improvements
 
-- Add authentication and authorization mechanisms.
-- Implement caching for improved performance.
-- Enhance error handling and logging.
-- Implement additional endpoints for CRUD operations on card status data.
-
+-   Add authentication and authorization mechanisms.
+-   Implement caching for improved performance.
+-   Enhance error handling and logging.
+-   Implement additional endpoints for CRUD operations on card status data.
